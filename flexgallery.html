@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Gallery</title>
+    <style>
+        #krt{
+            display: flex;
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgb(61,65,92);   
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        #krt>div:nth-child(2){
+            display: flex;
+            color: white;
+            justify-content: space-evenly;
+            width: 50%;
+
+        }
+        #krt1{
+            justify-content: center;
+            padding: 50px;
+            align-items: space-evenly;
+        }
+        #krt1 #nobi{
+            display: flex;
+             padding: 20px; 
+            justify-content: center;
+            justify-content: space-around;
+        }
+        #krt1 #dor{
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            justify-content: space-around;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="krt">
+        <div >masai</div>
+    <div>
+        <div>HOME</div>
+        <div>GALLERY</div>
+        <div>ABOUT</div>
+    </div>
+    </div>
+    <div id="krt1">
+        <h2 align="center" style="color: #EC4242;">PHOTO GALLERY</h2>
+        <div id="nobi">
+            <div><img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt=""></div>
+        </div>
+        <div  id="dor">
+            <div><img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/pentax/img/project/1.jpg.webp" alt=""></div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
