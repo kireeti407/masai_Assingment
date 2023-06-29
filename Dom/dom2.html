@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini calculator</title>
+</head>
+<body style="height:500px;display:flex; align-items:center;justify-content: center;">
+    <div>
+    <input type="text" placeholder="enter 1st Number" id="a">
+    <input type="text" placeholder="enter 2nd Number" id="b">
+    <div style="padding: 20px;">
+    <button onclick="alert(parseInt(krt.value)+parseInt(krt2.value))">Add</button>
+    <button onclick="alert(krt.value-krt2.value)">Subtract</button>
+    <button onclick="alert(krt.value*krt2.value)">multiply</button>
+    <button onclick="alert(krt.value/krt2.value)">divide</button>
+    </div>
+</div>
+</body>
+</html>
+<script>
+     let krt=document.getElementById("a");
+     let krt2=document.getElementById("b");
+</script>
