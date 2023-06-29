@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing and Displaying From Data usins Dom manipulation</title>
+</head>
+<body>
+   <input  type="text" value="" placeholder="enter name" id="myButton"> 
+   <button onclick="cl()">submit</button>
+   <div style="display: flex;">
+    <h3>enter value:</h1>
+   <h3 id="krt">name</h1>
+</div>
+</body>
+</html>
+<script>
+    let a=document.getElementById("myButton");
+    let b=document.getElementById("krt")
+    function cl(){
+        b.innerText=a.value;
+        alert(a.value)
+    }
+</script>
