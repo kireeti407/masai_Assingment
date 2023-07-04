@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise1</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let count=-2
+    let a=new Promise((function(resolve,reject){
+        if (count>0){
+            resolve("positive count")
+        }
+        else{
+            reject("negative count")
+        }
+    }))
+    a.then(function(data){
+        console.log(data)
+        alert(data)
+    }).catch(function(data1){
+        console.log(data1)
+        alert(data1)
+    })
+</script>
