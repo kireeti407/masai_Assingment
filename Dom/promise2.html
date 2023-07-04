@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise2</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        function waitPromise(time){
+            let a=new Promise(function(resolve,reject){
+                resolve("resolve")
+            })
+            a.then(function(data){
+                setTimeout(function(){
+                console.log(data)
+            },time)
+            })
+        }
+        waitPromise(5000)
+    </script>
+</html>
