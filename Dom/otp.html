@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>otp</title>
+</head>
+<body>
+    <input type="number" value="">
+    <button onclick=fun()> submit</button>
+
+</body>
+<script>
+    let a=document.querySelector("input")
+    function fun(){
+        let k=new Promise(function(resolve,reject){
+            if (a.value==1234){
+                resolve("success")
+            }
+            else{
+                reject("reject")
+            }
+        })
+        k.then(function(data){
+            console.log(data)
+            alert(data)
+        }).catch(function(data1){
+            console.log(data1)
+            alert(data1)
+        })
+    }
+</script>
+</html>
