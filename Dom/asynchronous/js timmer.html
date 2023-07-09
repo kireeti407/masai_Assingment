@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head > 
+<body style="background-color: black; color:white">
+    <div id="krt" style="border: 1px solid;">
+        <h1>timer</h1>
+        <hr>
+        <div  style="display:flex;gap: 10px; font-size: 100px;">
+        <div id="min">5</div>
+        <div style="font-size: 50px;display: contents">m</div>
+        <div>:</div>
+        <div id="sec">00</div>
+        <div style="font-size: 50px;display: contents">s</div>
+    </div>
+    <hr>
+    <button id="no" onclick="start()"style="background-color: lightblue;width: 100px;height: 25px;"> start</button>
+    <button  onclick="reset()" style="background-color: lightblue;width: 100px;height: 25px;">reset</button>
+    </div>
+    
+</body>
+</html>
+<script>
+    let min=document.getElementById("min")
+    let sec=document.getElementById("sec")
+    let s=1
+    let m=min.innerText
+   function start(){
+    let no=document.getElementById("no")
+    no.innerText="stop"
+    time=1000
+    setInterval(function(){
+        s--
+        sec.innerText=s
+        if (s<1){
+            m--
+            min.innerText=m
+            s=60
+        }
+    },1000)
+
+}
+function reset(){
+    sec.innerText="00"
+    min.innerText=5
+}
+    
+</script>
